@@ -1,6 +1,8 @@
 # CYD Olympic Hockey Scoreboard (Canada Men)
 
 ESP32-2432S028 (CYD) scoreboard for **Milano Cortina 2026 men's hockey**.
+<img width="1390" height="740" alt="MenGameDay" src="https://github.com/user-attachments/assets/18246849-23fa-4610-9b5d-81a0d01776e3" /><img width="567" height="403" alt="Live" src="https://github.com/user-attachments/assets/829a70c0-8469-44c8-ad5b-37ab9681227f" />
+
 
 ## What it does
 
@@ -88,6 +90,7 @@ See `README_AUDIO.md` for WAV format and upload instructions.
 
 ## Support
 
-If you enjoy what I’m making and want to support more late-night builds, experiments, and ideas turning into reality, it's genuinely appreciated.
+If you enjoy what Iâ€™m making and want to support more late-night builds, experiments, and ideas turning into reality, it's genuinely appreciated.
 
 - https://buymeacoffee.com/zerocypherxiii
+
