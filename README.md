@@ -7,11 +7,11 @@ ESP32-2432S028 (CYD) scoreboard for **Milano Cortina 2026 men's hockey**. Curren
 ## What it does
 
 - Uses ESPN Olympic men's hockey JSON feed
-- Default set to docuses on `CAN` (Team Canada men) <---easily changed to any participating nation
+- Default set to docuses on `CAN` (Team Canada men) <---easily changed to any participating nation, in include/config.h
 - Auto-selects event priority:
-  - in-progress Canada game
-  - else next scheduled Canada game (countdown)
-  - else most recent completed Canada game
+  - in-progress Canada (or user defined nation) game
+  - else next scheduled Canada (or user defined nation) game (countdown)
+  - else most recent completed Canada (or user defined nation) game
 - Screens:
   - `NEXT_GAME` (merged no-game + pre-game)
   - `LIVE`
@@ -48,8 +48,8 @@ pio run -e esp32-cyd-sdfix -t uploadfs
 
 Edit `include/config.h`:
 
-- Wi-Fi credentials
-- `FOCUS_TEAM_ABBR` (default `CAN`)
+- Update Wi-Fi credentials
+- `FOCUS_TEAM_ABBR` (default `CAN`, or update to favorite country NOC code, e.g. CAN, USA, NOR, CZE, etc.)
 - `TZ_INFO` for local countdown display
 - `ANTHEM_DAC_PIN` (default `25`)
 
@@ -61,6 +61,7 @@ Preferred paths:
 - `/flags/64/CAN.png`
 - `/flags/96/CAN.png`
 - optional canonical fallback `/flags/CAN.png`
+*If favourite nation flag is not listed in 'data/flags/', run the included fetch flags tool (tools/fetch_flags.py) or find your own flag image, resize to 56px, 64px, 96px, then save to appropriate data/flags folder as <NOC>.png
 
 Generate/download flags from ESPN:
 
@@ -90,9 +91,10 @@ See `README_AUDIO.md` for WAV format and upload instructions.
 
 ## Support
 
-If you enjoy what I’m making and want to support more late-night builds, experiments, and ideas turning into reality, it's genuinely appreciated.
+If you enjoy what I’m making and want to support more late-night builds, experiments, and random ideas turning into reality, it's genuinely appreciated.
 
 - https://buymeacoffee.com/zerocypherxiii
+
 
 
 
