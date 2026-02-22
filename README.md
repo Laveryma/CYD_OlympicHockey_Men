@@ -7,7 +7,7 @@ ESP32-2432S028 (CYD) scoreboard for **Milano Cortina 2026 men's hockey**. Curren
 ## What it does
 
 - Uses ESPN Olympic men's hockey JSON feed
-- Default set to docuses on `CAN` (Team Canada men) <---easily changed to any participating nation, in include/config.h
+- Default set to docuses on `CAN` (Team Canada men) <---easily changed to any participating nation, in 'include/config.h')
 - Auto-selects event priority:
   - in-progress Canada (or user defined nation) game
   - else next scheduled Canada (or user defined nation) game (countdown)
@@ -94,6 +94,7 @@ See `README_AUDIO.md` for WAV format and upload instructions.
 If you enjoy what I’m making and want to support more late-night builds, experiments, and random ideas turning into reality, it's genuinely appreciated.
 
 - https://buymeacoffee.com/zerocypherxiii
+
 
 
 
